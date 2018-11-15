@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -20,6 +21,18 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+}
+
+publish {
+    userOrg = 'zhousuqiang'
+    groupId = 'com.owen'
+    artifactId = 'tv-tablayout'
+    publishVersion = '1.0.0'
+    desc = 'TvTabLayout'
+    website = 'https://github.com/zhousuqiang/TvTabLayout'
 }
 
 dependencies {
