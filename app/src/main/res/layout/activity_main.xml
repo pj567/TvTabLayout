@@ -1,19 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.owen.tab.TvTabLayout
+        android:id="@+id/tablayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_marginTop="40dp"
+        app:tabIndicatorResId="@drawable/zx_p1_light"
+        app:tabIndicatorWidth="108dp"
+        app:tabIndicatorHeight="15dp"
+        app:tabMinWidth="160dp"
+        app:tabScrollMode="scrollable"
+        app:tabGravity="center"
+        app:tabPaddingBottom="12dp"
+        app:tabTextSelectedScale="1.2"
+        app:tabTexSize="22dp"
+        app:tabTextColor="@drawable/selector_tab_font_color"/>
 
-</android.support.constraint.ConstraintLayout>
+    <com.owen.tab.TvTabLayout
+        android:id="@+id/tablayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:tabIndicatorResId="@color/color_92C224"
+        app:tabIndicatorWidth="28dp"
+        app:tabIndicatorHeight="4dp"
+        app:tabMinWidth="160dp"
+        app:tabScrollMode="scrollable"
+        app:tabGravity="center"
+        app:tabPaddingBottom="12dp"
+        app:tabTextSelectedScale="1.2"
+        app:tabTexSize="22dp"
+        app:tabTextColor="@drawable/selector_tab_font_color2"/>
+
+    <com.owen.tab.TvTabLayout
+        android:id="@+id/tablayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:tabCircleDotRadius="5dp"
+        app:tabCircleDotColor="@color/color_ffac00"
+        app:tabIndicatorResId="@drawable/selector_tabview_circle"
+        app:tabIndicatorWidth="90dp"
+        app:tabIndicatorHeight="90dp"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorBackgroundColor="#000000"
+        app:tabIndicatorBackgroundHeight="1dp"
+        app:tabMinWidth="190dp"
+        app:tabScrollMode="scrollable"
+        app:tabGravity="top"
+        app:tabTextSelectedScale="1.2"
+        app:tabTextSelectedCentered="true"
+        app:tabTexSize="21sp"
+        app:tabTextColor="@color/color_424242" />
+
+    <com.owen.tab.TvTabLayout
+        android:id="@+id/tablayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:tabIndicatorResId="@drawable/zx_p1_light"
+        app:tabIndicatorWidth="108dp"
+        app:tabIndicatorHeight="15dp"
+        app:tabIndicatorBackgroundColor="@color/color_88ff804B"
+        app:tabIndicatorBackgroundHeight="3dp"
+        app:tabMinWidth="160dp"
+        app:tabScrollMode="fixed"
+        app:tabGravity="center"
+        app:tabPaddingBottom="12dp"
+        app:tabTextSelectedScale="1.2"
+        app:tabTexSize="22sp"
+        app:tabTextColor="@drawable/selector_tab_font_color">
+
+        <com.owen.tab.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题1"/>
+
+        <com.owen.tab.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题2"/>
+
+        <com.owen.tab.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题3"/>
+
+    </com.owen.tab.TvTabLayout>
+
+</LinearLayout>
