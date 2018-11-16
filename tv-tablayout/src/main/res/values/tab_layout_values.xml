@@ -6,7 +6,7 @@
         <attr name="android:layout"/>
     </declare-styleable>
 
-    <declare-styleable name="TabLayout">
+    <declare-styleable name="TvTabLayout">
         <attr name="tabIndicatorResId" format="reference" />
         <attr name="tabIndicatorWidth" format="dimension"/>
         <attr name="tabIndicatorHeight" format="dimension"/>
