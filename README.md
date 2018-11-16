@@ -21,7 +21,27 @@ implementation 'com.owen:tv-tablayout:1.0.0'
 | tabIndicatorResId     | reference |   指示器的资源(图片或颜色)     |
 | tabIndicatorWidth     | dimension |   指示器的宽    |
 | tabIndicatorHeight     | dimension |   指示器的高     |
-
+| tabIndicatorGravity     | top / center / bottom |    指示器的位置    |
+| tabIndicatorBackgroundHeight     | dimension |  指示器背景高度      |
+| tabIndicatorBackgroundColor     | color |    指示器背景颜色    |
+| tabContentStart     | dimension |    内容开始距离    |
+| tabContentBottom     | dimension |   内容底部距离     |
+| tabCircleDotRadius     | dimension |    小圆点的半径    |
+| tabCircleDotColor     | color / reference |   小圆点的颜色     |
+| tabScrollMode     | scrollable / fixed |   滚动模式     |
+| tabBackground     | reference |    tab背景    |
+| tabGravity     | top / center / bottom / fill |    tab的位置    |
+| tabMinWidth     | dimension |   tab最小宽度     |
+| tabMaxWidth     | dimension |   tab最大宽度     |
+| tabTexSize     | dimension |    文本大小    |
+| tabTextColor     | color / reference |    文本颜色    |
+| tabTextSelectedScale     | float |    文本选中时的缩放比例    |
+| tabTextSelectedCentered     | boolean |    文本选中时是否居中    |
+| tabPaddingStart     | dimension |   tab padding start     |
+| tabPaddingTop     | dimension |    tab padding top    |
+| tabPaddingEnd     | dimension |    tab padding end    |
+| tabPaddingBottom     | dimension |    tab padding bottom    |
+| tabPadding     | dimension |    tab padding    |
 
 ### 使用
 
